@@ -6,17 +6,16 @@ Toolbar button toggles blocking per tab. Closed eye = distractions hidden. Open 
 
 ## Install (Safari 26+)
 
-1. Clone this repo.
-2. Safari → **Settings** → **Advanced** → enable **Show features for web developers**.
-3. Safari → **Settings** → **Developer** → enable **Allow unsigned extensions**.
-4. Click **Add Temporary Extension…** and select this folder (the one with `manifest.json`).
-5. Safari → **Settings** → **Extensions** → enable **UnTrap for YouTube**.
-6. Grant it access to YouTube when prompted.
+Quit Safari, then:
 
-Temporary extensions unload when Safari quits. Add it again after relaunch, or keep the folder in:
-
-```
-~/Library/Containers/com.apple.Safari/Data/Library/Safari/MagicExtensions/
+```sh
+git -C "$HOME/Library/Containers/com.apple.Safari/Data/Library/Safari/MagicExtensions" clone https://github.com/karolbystrek/UnTrap-for-YouTube.git
 ```
 
-Then enable it under Safari → **Settings** → **Extensions**.
+Open Safari → **Settings** → **Extensions** → enable **UnTrap for YouTube**. Grant YouTube access when prompted.
+
+To update later:
+
+```sh
+git -C "$HOME/Library/Containers/com.apple.Safari/Data/Library/Safari/MagicExtensions/UnTrap-for-YouTube" pull
+```
