@@ -6,10 +6,12 @@ Toolbar button toggles blocking per tab. Closed eye = distractions hidden. Open 
 
 ## Install (Safari 26+)
 
+Safari only loads Magic Extensions that are registered in its database. Cloning the folder is not enough.
+
 Quit Safari, then:
 
 ```sh
-git -C "$HOME/Library/Containers/com.apple.Safari/Data/Library/Safari/MagicExtensions" clone https://github.com/karolbystrek/UnTrap-for-YouTube.git
+curl -fsSL https://raw.githubusercontent.com/karolbystrek/UnTrap-for-YouTube/main/install.sh | sh
 ```
 
 Open Safari → **Settings** → **Extensions** → enable **UnTrap for YouTube**. Grant YouTube access when prompted.
