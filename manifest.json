@@ -1,0 +1,42 @@
+{
+  "action" : {
+    "default_title" : "Toggle Distractions",
+    "icon_variants" : [
+      {
+        "any" : "symbol:eye.slash"
+      }
+    ]
+  },
+  "background" : {
+    "preferred_environment" : [
+      "document"
+    ],
+    "scripts" : [
+      "background.js"
+    ],
+    "type" : "module"
+  },
+  "content_scripts" : [
+    {
+      "css" : [
+        "unsafe-styles-youtube.css"
+      ],
+      "matches" : [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ],
+  "description" : "Removes YouTube Shorts and other distractions from YouTube.",
+  "icon_variants" : [
+    {
+      "any" : "symbol:eye.slash"
+    }
+  ],
+  "manifest_version" : 3,
+  "name" : "Unhook for YouTube",
+  "permissions" : [
+    "scripting",
+    "tabs"
+  ],
+  "version" : "1.0"
+}

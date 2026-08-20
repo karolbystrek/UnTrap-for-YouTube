@@ -1,0 +1,49 @@
+{
+  "cssRules" : [
+    {
+      "declarations" : "display: none !important;",
+      "fileSuffix" : "youtube",
+      "selectorVariableName" : "unsafeComments",
+      "sentinel" : "data-ogz6bapy"
+    },
+    {
+      "declarations" : "display: none !important;",
+      "fileSuffix" : "youtube",
+      "selectorVariableName" : "unsafeSecondaryColumn",
+      "sentinel" : "data-ogz6bapy"
+    },
+    {
+      "declarations" : "flex: 0 0 calc(100% - var(--ytd-watch-flexy-non-player-width)) !important; margin-left: auto !important; margin-right: auto !important;",
+      "fileSuffix" : "youtube",
+      "selectorVariableName" : "unsafePrimaryColumn",
+      "sentinel" : "data-ogz6bapy"
+    }
+  ],
+  "schemaVersion" : 1,
+  "variables" : [
+    {
+      "fileSuffix" : "youtube",
+      "name" : "unsafeComments",
+      "type" : "cssSelector",
+      "values" : [
+        "ytd-comments#comments"
+      ]
+    },
+    {
+      "fileSuffix" : "youtube",
+      "name" : "unsafePrimaryColumn",
+      "type" : "cssSelector",
+      "values" : [
+        "ytd-watch-flexy[is-two-columns_] #primary"
+      ]
+    },
+    {
+      "fileSuffix" : "youtube",
+      "name" : "unsafeSecondaryColumn",
+      "type" : "cssSelector",
+      "values" : [
+        "ytd-watch-flexy #secondary"
+      ]
+    }
+  ]
+}
