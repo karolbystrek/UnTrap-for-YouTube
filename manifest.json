@@ -33,7 +33,7 @@
     }
   ],
   "manifest_version" : 3,
-  "name" : "Unhook for YouTube",
+  "name" : "UnTrap for YouTube",
   "permissions" : [
     "scripting",
     "tabs"
